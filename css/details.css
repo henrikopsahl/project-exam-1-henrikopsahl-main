@@ -1,0 +1,187 @@
+html {
+    height: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #fafafa;
+  }
+  
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  header {
+    background-color: #131313;
+    color: #fafafa;
+    padding: 10px;
+  }
+  
+  header a {
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  p {
+    color: #131313;
+  }
+  
+  .post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+  
+  .post-container h2 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  
+  .post-container img {
+    width: 300px;
+    height: auto;
+  }
+  
+  .post-container div {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .post-container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .post-container .content p {
+    color: #131313;
+  }
+
+  /* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: none;
+}
+
+#myModal img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Add Animation */
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+  .hamburger-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .hamburger-menu .links {
+    display: block;
+    background-color: #131313;
+  }
+  
+  .hamburger-menu a {
+    color: rgb(244, 244, 249);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+  }
+  
+  .hamburger-menu a .icon {
+    display: block;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .hamburger-menu {
+      display: block;
+    }
+    .hamburger-menu .links {
+      display: none;
+    }
+  
+    nav {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .post-container h2 {
+      font-size: 2em;
+    }
+  
+    .post-container div {
+      width: 90%;
+    }
+  
+    .post-container h2 {
+      font-size: 1.4rem;
+    }
+  }
+  
