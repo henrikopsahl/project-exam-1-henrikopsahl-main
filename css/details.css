@@ -25,6 +25,7 @@ html {
     color: #fafafa;
     text-decoration: none;
     font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
   }
   
   a:hover {
@@ -42,9 +43,13 @@ html {
     justify-content: center;
     gap: 40px;
   }
+  h1, h2{
+    font-family: 'Arvo', serif;
+  }
   
   p {
     color: #131313;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .post-container {
