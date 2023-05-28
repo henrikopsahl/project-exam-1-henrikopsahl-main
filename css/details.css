@@ -82,7 +82,7 @@ p {
 }
 hr {
   border: none;
-  border-top: 1px solid black;
+  border-top: 1px solid #131313;
   width: 80%;
   margin: 20px auto;
 }
@@ -212,5 +212,25 @@ hr {
 
   .post-container h2 {
     font-size: 1.4rem;
+  }
+
+  @media (max-width: 768px) {
+    .post-details {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .post-details h2,
+    .post-details img {
+      flex: none;
+      width: 100%;
+    }
+  }
+
+  #myModal img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
   }
 }

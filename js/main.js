@@ -66,7 +66,7 @@ function showNextPosts() {
   displayPosts();
 }
 
-// Adding event listeners to the next/prev buttons
+// Adding click events to the next/prev buttons
 document
   .querySelector(".prev-arrow")
   .addEventListener("click", showPreviousPosts);

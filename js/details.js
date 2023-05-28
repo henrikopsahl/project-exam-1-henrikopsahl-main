@@ -25,8 +25,8 @@ async function getPostDetails(postId) {
       postDetails.appendChild(postImage);
     }
 
-    const hrElement = document.createElement("hr");
-    postContainer.appendChild(hrElement);
+    const hr = document.createElement("hr");
+    postContainer.appendChild(hr);
 
     if (post.content && post.content.rendered) {
       const postContent = document.createElement("div");
@@ -42,6 +42,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const postId = urlParams.get("id");
 getPostDetails(postId);
 
+// make the hamburger menu work
 function hamburgerMenu() {
   var hamburgerLinks = document.querySelector(".links");
   if (hamburgerLinks.style.display === "block") {
