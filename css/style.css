@@ -25,7 +25,7 @@ header a {
   color: #fafafa;
   text-decoration: none;
   font-size: 1.2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a:hover {
@@ -43,12 +43,14 @@ nav ul {
   justify-content: center;
   gap: 40px;
 }
-h1, h2, h3{
-  font-family: 'Arvo', serif;
+h1,
+h2,
+h3 {
+  font-family: "Arvo", serif;
 }
 
 main h1 {
-  color: #6D326D;
+  color: #6d326d;
   text-align: center;
 }
 
@@ -71,13 +73,11 @@ main h1 {
   margin: 10px;
   text-align: center;
   color: #131313;
-  background: #fafafa; 
-  border: 1px solid #ddd; 
-  padding: 10px; 
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-
 
 .post img {
   width: 100%;
@@ -89,7 +89,6 @@ main h1 {
   display: flex;
   justify-content: space-between;
   width: 100%;
-
 }
 
 .prev-next-button .next-arrow {
@@ -102,7 +101,7 @@ button {
   border: none;
   height: 30px;
   width: 100px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 button:hover {
@@ -162,7 +161,7 @@ p {
   margin: 0;
   line-height: 1.6;
   font-size: 1.2rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .about-section .about-content img {
@@ -173,7 +172,7 @@ p {
 a {
   text-decoration: none;
   color: #131313;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 footer {
@@ -186,12 +185,12 @@ footer p {
   display: flex;
   justify-content: center;
 }
-footer p{
-  font-family: 'Montserrat', sans-serif;
+footer p {
+  font-family: "Montserrat", sans-serif;
 }
 
 footer button {
-  background-color: #6D326D;
+  background-color: #6d326d;
   margin-top: 10px;
 }
 
@@ -253,26 +252,3 @@ footer button {
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,3 @@
-
 let postsData = [];
 let currentIndex = 0;
 const url = "https://www.jagaranti.icu/wp-json/wp/v2/posts?_embed&per_page=8";
@@ -67,13 +66,16 @@ function showNextPosts() {
   displayPosts();
 }
 
-// Add event listeners to the next/prev buttons
-document.querySelector(".prev-arrow").addEventListener("click", showPreviousPosts);
+// Adding event listeners to the next/prev buttons
+document
+  .querySelector(".prev-arrow")
+  .addEventListener("click", showPreviousPosts);
 document.querySelector(".next-arrow").addEventListener("click", showNextPosts);
 
 getPosts();
 
-const allUrl = "https://www.jagaranti.icu/wp-json/wp/v2/posts?_embed&per_page=12";
+const allUrl =
+  "https://www.jagaranti.icu/wp-json/wp/v2/posts?_embed&per_page=12";
 const postsPerPage = 10;
 let currentPage = 1;
 let allPosts = [];
@@ -135,13 +137,11 @@ function showMorePosts() {
   }
 }
 
-// Add click event to view more button
+// Adding click event to the view more button
 const viewMoreButton = document.querySelector("#view-more");
 viewMoreButton.addEventListener("click", showMorePosts);
 
 getAllPosts();
-
-
 
 // this is for making the header stick to the top at all time
 window.onscroll = function () {
@@ -169,5 +169,3 @@ function hamburgerMenu() {
     hamburgerLinks.style.display = "block";
   }
 }
-
-

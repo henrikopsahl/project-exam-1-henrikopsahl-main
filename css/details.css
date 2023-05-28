@@ -1,95 +1,122 @@
 html {
-    height: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    background-color: #fafafa;
-  }
-  
-  html:focus-within {
-    scroll-behavior: smooth;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  header {
-    background-color: #131313;
-    color: #fafafa;
-    padding: 10px;
-  }
-  
-  header a {
-    color: #fafafa;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  .logo {
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-  }
-  h1, h2{
-    font-family: 'Arvo', serif;
-  }
-  
-  p {
-    color: #131313;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .post-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    margin-top: 0;
-  }
-  
-  .post-container h2 {
-    font-size: 2.2rem;
-    text-align: center;
-  }
-  
-  .post-container img {
-    width: 300px;
-    height: auto;
-  }
-  
-  .post-container div {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .post-container .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .post-container .content p {
-    color: #131313;
-  }
+  height: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
 
-  /* The Modal (background) */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+header {
+  background-color: #131313;
+  color: #fafafa;
+  padding: 10px;
+}
+
+header a {
+  color: #fafafa;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+h1,
+h2 {
+  font-family: "Arvo", serif;
+}
+
+p {
+  color: #131313;
+  font-family: "Montserrat", sans-serif;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+}
+
+.post-container h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.post-container img {
+  max-width: 300px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.post-container div {
+  width: 80%;
+  margin: 0 auto;
+}
+hr {
+  border: none;
+  border-top: 1px solid black;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.post-container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.post-container .content p {
+  color: #131313;
+}
+
+.post-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.post-details h2 {
+  flex: 1;
+  text-align: left;
+}
+
+.post-details img {
+  flex: 1;
+  text-align: right;
+}
+
 .modal {
-  display: none; 
+  display: none;
   position: fixed;
   z-index: 1;
   padding-top: 100px;
@@ -97,11 +124,9 @@ html {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; 
-  
+  overflow: auto;
 }
 
-/* Modal Content (Image) */
 .modal-content {
   margin: auto;
   display: block;
@@ -115,19 +140,20 @@ html {
   height: auto;
 }
 
-
-/* Add Animation */
 .modal-content {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
-/* The Close Button */
 .close {
   position: absolute;
   top: 15px;
@@ -138,55 +164,53 @@ html {
   transition: 0.3s;
 }
 
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
+.hamburger-menu .links {
+  display: block;
+  background-color: #131313;
+}
+
+.hamburger-menu a {
+  color: rgb(244, 244, 249);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+}
+
+.hamburger-menu a .icon {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
   .hamburger-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
+    display: block;
   }
-  
   .hamburger-menu .links {
-    display: block;
-    background-color: #131313;
+    display: none;
   }
-  
-  .hamburger-menu a {
-    color: rgb(244, 244, 249);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.5rem;
-    display: block;
+
+  nav {
+    display: none;
   }
-  
-  .hamburger-menu a .icon {
-    display: block;
+}
+
+@media (max-width: 768px) {
+  .post-container h2 {
+    font-size: 2em;
   }
-  
-  @media only screen and (max-width: 768px) {
-    .hamburger-menu {
-      display: block;
-    }
-    .hamburger-menu .links {
-      display: none;
-    }
-  
-    nav {
-      display: none;
-    }
+
+  .post-container div {
+    width: 90%;
   }
-  
-  @media (max-width: 768px) {
-    .post-container h2 {
-      font-size: 2em;
-    }
-  
-    .post-container div {
-      width: 90%;
-    }
-  
-    .post-container h2 {
-      font-size: 1.4rem;
-    }
+
+  .post-container h2 {
+    font-size: 1.4rem;
   }
-  
+}
