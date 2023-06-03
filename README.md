@@ -14,6 +14,7 @@ For my project exam 1 the task was to make a blog website. I decided to focus on
 # Installing 
 
 1. Clone the repo
+https://github.com/henrikopsahl/project-exam-1-henrikopsahl-main.git
 
 2. Install the dependencies
 
